@@ -26,7 +26,8 @@
         <Grid>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
                 <Button 
-                    x:Name="HideButton" Click="HideButton_Click"
+                    x:Name="HideButton" 
+                    Click="HideButton_Click"
                     Content="—" FontSize="14" 
                     Height="20" Width="40" 
                     Margin="5" 

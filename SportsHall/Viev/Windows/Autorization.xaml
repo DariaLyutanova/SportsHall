@@ -43,6 +43,7 @@
                     Stroke="White"
                     Opacity="0.2"/>
         </Grid>
+        
         <Grid Grid.Row="1">
             <Grid.ColumnDefinitions>
             <ColumnDefinition Width="230"/>

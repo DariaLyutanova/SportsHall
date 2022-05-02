@@ -1,0 +1,21 @@
+﻿<Page x:Class="SportsHall.Viev.Page.Other.StartPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SportsHall.Viev.Page.Other"
+      mc:Ignorable="d" 
+      Style="{StaticResource Page}">
+
+    <Grid>
+        <Image Source="/Content/Image/poza-kanat-press-tros-myscy-bodibilder.jpg" />
+        <Grid Margin="540 440 80 90">
+            <TextBlock
+                Text="Сегодня нас ждёт тяжёлоя, но продуктивная работа."
+                Foreground="White"
+                FontSize="30"
+                TextWrapping="Wrap"
+            />
+        </Grid>
+    </Grid>
+</Page>

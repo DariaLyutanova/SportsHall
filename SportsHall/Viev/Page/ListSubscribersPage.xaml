@@ -1,0 +1,930 @@
+﻿<Page x:Class="SportsHall.Viev.Page.ListSubscribersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:SportsHall.Viev.Page"
+      mc:Ignorable="d" 
+      Style="{StaticResource Page}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        <TextBox
+            Height="50"
+            Width="800"
+            Padding="40 0 0 0"
+            CaretBrush="White"/>
+        <TextBlock
+            Text="🔎"
+            Margin="200 0 0 0"
+            VerticalAlignment="Center"
+            FontSize="20"
+            Foreground="White"/>
+        <ListBox Grid.Row="1" BorderThickness="0" x:Name="ListBoxLol" Background="Transparent" Margin="20">
+            <ListBoxItem>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Соколов Егор Миронович"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="10"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB512"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="10.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="10.10.2023"
+                            FontSize="15"/>
+                    </StackPanel>
+                    
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Иванова Александра Ярославовна"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="3"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB513"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="10.01.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="20.01.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Федорова София Никитична"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="20"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB514"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="10.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="20.10.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Козлова Есения Григорьевна"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="17"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB515"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="04.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="21.10.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Судакова Екатерина Андреевна"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="12"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB516"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="12.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="12.07.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Потапов Семён Семёнович"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="7"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB517"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="12.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="30.03.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Захаров Артём Арсенович"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="13"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB518"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="12.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="10.03.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    
+
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Алехина Екатерина Тимуровна"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="9"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB519"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="17.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="17.03.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Денисова Кира Дмитриевна"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="13"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB520"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="13.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="30.03.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Плотников Савелий Владимирович"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="1"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB521"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="08.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="11.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Федоров Глеб Иванович"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="24"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB522"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="08.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="24.08.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </ListBoxItem>
+            <ListBoxItem Margin="0 15 0 0">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="800"/>
+                        <ColumnDefinition Width="300"/>
+                    </Grid.ColumnDefinitions>
+                    <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ФИО:"
+                            FontSize="18"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="Соколов Григорий Григорьевич"
+                            FontSize="18"
+                            />
+                    </StackPanel>
+
+                    <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ЗАНЯТИЙ:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="2"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="20 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="НОМЕР АБОНИМЕНТА:"
+                            FontSize="15"
+                            />
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="SUB523"
+                            FontSize="15"
+                            />
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="0" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ С:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="08.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Right" Orientation="Horizontal" Grid.Row="1" Grid.Column="1">
+                        <TextBlock
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="ДЕЙСТВУЕТ ДО:"
+                            FontSize="15"/>
+                        <TextBlock
+                            Margin="10 0 0 0"
+                            Style="{StaticResource TextBloockStyle}"
+                            Text="15.02.2022"
+                            FontSize="15"/>
+                    </StackPanel>
+                </Grid>
+            </ListBoxItem>
+        </ListBox>
+        <Grid Grid.Row="2">
+
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Right">
+                <TextBlock 
+                Style="{StaticResource TextBloockStyle}"
+                Text="ВСЕГО:" 
+                FontSize="25"
+                VerticalAlignment="Center" HorizontalAlignment="Right"/>
+                <TextBlock 
+                    Margin="20 0 20 0"
+                    Style="{StaticResource TextBloockStyle}"
+                    Text="12"
+                    FontSize="25"
+                    VerticalAlignment="Center" HorizontalAlignment="Right"/>
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

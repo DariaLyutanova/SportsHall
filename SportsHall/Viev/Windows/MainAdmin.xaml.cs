@@ -25,7 +25,8 @@ namespace SportsHall.Viev.Windows
         public MainAdmin()
         {
             InitializeComponent();
-            MainFrame.Navigate(new SubscribersPage());
+            EntranceHallButton.Foreground = Brushes.White;
+            MainFrame.Navigate(new EntranceHallPage());
         }
 
         private void HideButton_Click(object sender, RoutedEventArgs e)
@@ -43,10 +44,30 @@ namespace SportsHall.Viev.Windows
             this.DragMove();
         }
 
+        private void ExitButton_Click(object sender, RoutedEventArgs e)
+        {
+            Autorization autorization = new Autorization();
+            autorization.Show();
+            this.Close();
+        }
+
+        private void EntranceHallButton_Click(object sender, RoutedEventArgs e)
+        {
+            MainFrame.Navigate(new EntranceHallPage());
+
+            EntranceHallButton.Foreground = Brushes.White;
+            SubscribersButton.Foreground = Brushes.Gray;
+            HallButton.Foreground = Brushes.Gray;
+            ListSubscribersButton.Foreground = Brushes.Gray;
+            ListWorcerButton.Foreground = Brushes.Gray;
+            NewWorkwrButton.Foreground = Brushes.Gray;
+        }
+
         private void SubscribersButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new SubscribersPage());
 
+            EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.White;
             HallButton.Foreground = Brushes.Gray;
             ListSubscribersButton.Foreground = Brushes.Gray;
@@ -59,6 +80,7 @@ namespace SportsHall.Viev.Windows
         {
             MainFrame.Navigate(new HallPage());
 
+            EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;
             HallButton.Foreground = Brushes.White;
             ListSubscribersButton.Foreground = Brushes.Gray;
@@ -70,6 +92,7 @@ namespace SportsHall.Viev.Windows
         {
             MainFrame.Navigate(new ListSubscribersPage());
 
+            EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;
             HallButton.Foreground = Brushes.Gray;
             ListSubscribersButton.Foreground = Brushes.White;
@@ -77,17 +100,11 @@ namespace SportsHall.Viev.Windows
             NewWorkwrButton.Foreground = Brushes.Gray;
         }
 
-        private void ExitButton_Click(object sender, RoutedEventArgs e)
-        {
-            Autorization autorization = new Autorization();
-            autorization.Show();
-            this.Close();
-        }
-
         private void ListWorcerButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new ListWorkerPage());
 
+            EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;
             HallButton.Foreground = Brushes.Gray;
             ListSubscribersButton.Foreground = Brushes.Gray;
@@ -99,6 +116,7 @@ namespace SportsHall.Viev.Windows
         {
             MainFrame.Navigate(new NewWorkerPage());
 
+            EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;
             HallButton.Foreground = Brushes.Gray;
             ListSubscribersButton.Foreground = Brushes.Gray;

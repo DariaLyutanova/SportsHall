@@ -23,6 +23,7 @@ namespace SportsHall.Viev.Windows
         public MainWorker()
         {
             InitializeComponent();
+            SubscribersButton.Foreground = Brushes.White;
             MainFrame.Navigate(new SubscribersPage());
         }
 

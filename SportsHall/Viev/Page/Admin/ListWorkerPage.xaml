@@ -554,7 +554,7 @@
                         <TextBlock
                             Margin="10 0 0 0"
                             Style="{StaticResource TextBloockStyle}"
-                            Text="Куряева Елизовета"
+                            Text="Куряева Елизавета Вадимовна"
                             FontSize="18"
                             />
                     </StackPanel>
@@ -639,7 +639,7 @@
                         <TextBlock
                             Margin="10 0 0 0"
                             Style="{StaticResource TextBloockStyle}"
-                            Text="Волков Владислав"
+                            Text="Волков Владислав Александрович"
                             FontSize="18"
                             />
                     </StackPanel>

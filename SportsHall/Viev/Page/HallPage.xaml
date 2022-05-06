@@ -227,7 +227,7 @@
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
                         <TextBlock
                             Style="{StaticResource TextBloockStyle}"
-                            Text="НОМЕР АБОНИМЕНТА:"
+                            Text="НОМЕР АБОНЕМЕНТА:"
                             FontSize="15"
                             />
                         <TextBlock
@@ -289,7 +289,7 @@
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
                         <TextBlock
                             Style="{StaticResource TextBloockStyle}"
-                            Text="НОМЕР АБОНИМЕНТА:"
+                            Text="НОМЕР АБОНЕМЕНТА:"
                             FontSize="15"
                             />
                         <TextBlock
@@ -351,7 +351,7 @@
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
                         <TextBlock
                             Style="{StaticResource TextBloockStyle}"
-                            Text="НОМЕР АБОНИМЕНТА:"
+                            Text="НОМЕР АБОНЕМЕНТА:"
                             FontSize="15"
                             />
                         <TextBlock
@@ -413,7 +413,7 @@
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
                         <TextBlock
                             Style="{StaticResource TextBloockStyle}"
-                            Text="НОМЕР АБОНИМЕНТА:"
+                            Text="НОМЕР АБОНЕМЕНТА:"
                             FontSize="15"
                             />
                         <TextBlock
@@ -475,7 +475,7 @@
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
                         <TextBlock
                             Style="{StaticResource TextBloockStyle}"
-                            Text="НОМЕР АБОНИМЕНТА:"
+                            Text="НОМЕР АБОНЕМЕНТА:"
                             FontSize="15"
                             />
                         <TextBlock
@@ -537,7 +537,7 @@
                     <StackPanel Grid.Row="1" Grid.Column="0" Orientation="Horizontal">
                         <TextBlock
                             Style="{StaticResource TextBloockStyle}"
-                            Text="НОМЕР АБОНИМЕНТА:"
+                            Text="НОМЕР АБОНЕМЕНТА:"
                             FontSize="15"
                             />
                         <TextBlock

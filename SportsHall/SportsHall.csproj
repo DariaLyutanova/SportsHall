@@ -75,9 +75,6 @@
     <Compile Include="Viev\Page\Other\EntranceHallPage.xaml.cs">
       <DependentUpon>EntranceHallPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Viev\Page\Other\StartPage.xaml.cs">
-      <DependentUpon>StartPage.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Viev\Page\SubscribersPage.xaml.cs">
       <DependentUpon>SubscribersPage.xaml</DependentUpon>
     </Compile>
@@ -135,10 +132,6 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Viev\Page\Other\EntranceHallPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Viev\Page\Other\StartPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

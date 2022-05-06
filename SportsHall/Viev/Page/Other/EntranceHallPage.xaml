@@ -51,7 +51,7 @@
                 <TextBlock
                 Foreground="White"
                 FontSize="20"
-                Text="НОМЕР АБОНИМЕНТА"/>
+                Text="НОМЕР АБОНЕМЕНТА"/>
                 <TextBox
                 x:Name="IDSubscribersTextBox"
                 Width="600"/>

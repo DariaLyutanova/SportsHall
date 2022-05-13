@@ -24,6 +24,7 @@ namespace SportsHall.Viev.Windows
         {
             InitializeComponent();
             //просто так это место не нужно трогать. 
+            
         }
 
         private void HideButton_Click(object sender, RoutedEventArgs e)
@@ -175,6 +176,25 @@ namespace SportsHall.Viev.Windows
                 ImageOne.Visibility = Visibility.Visible;
                 ImageTho.Visibility = Visibility.Collapsed;
                 VisiblePassword.Content = "ПОКАЗАТЬ ПАРОЛЬ";
+            }
+        }
+
+        private void PasswordPB_PasswordChanged(object sender, RoutedEventArgs e)
+        {
+            
+        }
+
+        private void PasswordPB_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (Keyboard.GetKeyStates(Key.CapsLock) == KeyStates.Toggled)
+            {
+                ErrorTextBox.Visibility = Visibility.Visible;
+                ErrorTextBox.Text = "CAPS LOCK";
+            }
+            else
+            {
+                ErrorTextBox.Visibility = Visibility.Collapsed;
+                ErrorTextBox.Text = null;
             }
         }
     }

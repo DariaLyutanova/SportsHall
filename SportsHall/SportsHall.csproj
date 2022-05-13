@@ -163,5 +163,9 @@
   <ItemGroup>
     <Resource Include="Content\Icon\free-icon-dumbbell-308911.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Content\Image\VisebalFols.png" />
+    <Resource Include="Content\Image\ViseblTrue.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

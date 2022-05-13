@@ -974,7 +974,7 @@
                 FontSize="25"
                 VerticalAlignment="Center" HorizontalAlignment="Right"/>
                 <TextBlock 
-                    Margin="20 0 20 0"
+                    Margin="5 0 10 0"
                     Style="{StaticResource TextBloockStyle}"
                     Text="11"
                     FontSize="25"
@@ -988,7 +988,7 @@
                 FontSize="25"
                 VerticalAlignment="Center" HorizontalAlignment="Right"/>
                 <TextBlock 
-                    Margin="20 0 20 0"
+                    Margin="5 0 5 0"
                     Style="{StaticResource TextBloockStyle}"
                     Text="5"
                     FontSize="25"

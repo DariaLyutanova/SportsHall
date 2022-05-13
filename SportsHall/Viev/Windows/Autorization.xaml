@@ -72,23 +72,22 @@
                         Style="{StaticResource TextBloockStyle}"
                         Foreground="#BF3030"/>
             </Border>
-            <TextBlock
-                Margin="0 0 0 100"
-                VerticalAlignment="Center" HorizontalAlignment="Center"
-                Style="{StaticResource TextBloockStyle}"
-                Text="ФИЗКУЛЬТ"
-                FontSize="29"/>
-            <TextBlock
-                VerticalAlignment="Center" HorizontalAlignment="Center"
-                Style="{StaticResource TextBloockStyle}"
-                Text="ПРИ"
-                FontSize="70"/>
-            <TextBlock
-                Margin="0 120 0 0"
-                VerticalAlignment="Center" HorizontalAlignment="Center"
-                Style="{StaticResource TextBloockStyle}"
-                Text="ВЕТ"
-                FontSize="90"/>
+            <Image 
+                Height="2350"
+                Width="235"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                RenderTransformOrigin="0.5,0.5"
+                Source="/Content/Icon/free-icon-dumbbell-308911.png">
+                <Image.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="90"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Image.RenderTransform>
+            </Image>
             <Grid Grid.Column="1">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                     <TextBlock
@@ -97,7 +96,7 @@
                         Text="ЛОГИН"
                         FontSize="20"/>
                     <TextBox
-                        Style="{StaticResource LoginTextBox}"
+                        Style="{StaticResource AutorizationsTextBox}"
                         Name="LoginTB"
                         Margin="0 10 0 0"
                         CaretBrush="White"
@@ -114,6 +113,38 @@
                         Margin="0 10 0 0"
                         BorderBrush="Gray" BorderThickness="1"
                         Height="40" Width="500"/>
+                    <TextBox
+                        Style="{StaticResource AutorizationsTextBox}"
+                        Visibility="Collapsed"
+                        x:Name="PasswordTB"
+                        CaretBrush="White"
+                        Margin="0 10 0 0"
+                        BorderBrush="Gray" BorderThickness="1"
+                        Height="40" Width="500"/>
+                    <StackPanel Margin="10 10 0 0" VerticalAlignment="Center" HorizontalAlignment="Left" Orientation="Horizontal" Height="40" Width="190">
+                        <Image 
+                            Height="30"
+                            Width="30"
+                            x:Name="ImageOne" 
+                            Source="/Content/Image/ViseblTrue.png" 
+                            Visibility="Visible"/>
+                        <Image 
+                            Height="30"
+                            Width="30"
+                            x:Name="ImageTho" 
+                            Source="/Content/Image/VisebalFols.png" 
+                            Visibility="Collapsed"/>
+                        <ToggleButton 
+                            BorderThickness="0"
+                            x:Name="VisiblePassword"
+                            Click="VisiblePassword_Click"
+                            Width="150"
+                            Background="Transparent"
+                            Content="ПОКАЗАТЬ ПАРОЛЬ"
+                            FontSize="15"
+                            HorizontalContentAlignment="Left" Cursor="Hand"/>
+                    </StackPanel>
+                    
                     <Button 
                         x:Name="Resume"
                         Click="Resume_Click"

@@ -85,6 +85,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
         <!--#endregion-->
         <!--#region TextBlock-->
         <Style TargetType="TextBlock" x:Key="TextBloockStyle">
@@ -132,7 +133,7 @@
             </Setter>
         </Style>
 
-        <Style TargetType="TextBox" x:Key="LoginTextBox">
+        <Style TargetType="TextBox" x:Key="AutorizationsTextBox">
             <Setter Property="Foreground" Value="Gray"/>
             <Setter Property="FontSize" Value="20"/>
             <Setter Property="Padding" Value="10 0 0 0"/>
@@ -207,6 +208,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+        
         <!--#endregion-->
         <!--#region ScrollBar-->
         <Style x:Key="ScrollBarLineButtonStyle" TargetType="{x:Type RepeatButton}">
@@ -295,6 +297,37 @@
 
         <Style TargetType="{x:Type ScrollBar}">
             <Setter Property="Template" Value="{StaticResource VerticalScrollBar}"/>
+        </Style>
+        <!--#endregion-->
+        <!--#region ToggleButton-->
+        <Style TargetType="ToggleButton">
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="FontFamily" Value="Copperplate Gothic Light"/>
+            <Setter Property="Foreground" Value="Gray"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="BorderBrush" Value="Transparent"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="ToggleButton">
+                        <Border Name="borderone"
+                           CornerRadius="0"
+                           Background="{TemplateBinding Background }"
+                           BorderThickness="{TemplateBinding BorderThickness}"
+                           BorderBrush="{TemplateBinding BorderBrush}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Foreground" Value="White"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
         </Style>
         <!--#endregion-->
     </Application.Resources>

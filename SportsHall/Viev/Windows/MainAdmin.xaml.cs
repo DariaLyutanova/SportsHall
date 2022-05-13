@@ -27,6 +27,7 @@ namespace SportsHall.Viev.Windows
             InitializeComponent();
             EntranceHallButton.Foreground = Brushes.White;
             MainFrame.Navigate(new EntranceHallPage());
+            Title = "ГЛАВНОЕ ОКНО: ВХОД В ЗАЛ";
         }
 
         private void HideButton_Click(object sender, RoutedEventArgs e)
@@ -54,6 +55,7 @@ namespace SportsHall.Viev.Windows
         private void EntranceHallButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new EntranceHallPage());
+            Title = "ГЛАВНОЕ ОКНО: ВХОД В ЗАЛ";
 
             EntranceHallButton.Foreground = Brushes.White;
             SubscribersButton.Foreground = Brushes.Gray;
@@ -66,6 +68,7 @@ namespace SportsHall.Viev.Windows
         private void SubscribersButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new SubscribersPage());
+            Title = "ГЛАВНОЕ ОКНО: АБОНЕМЕНТ";
 
             EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.White;
@@ -79,6 +82,7 @@ namespace SportsHall.Viev.Windows
         private void HallButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new HallPage());
+            Title = "ГЛАВНОЕ ОКНО: ЗАЛ";
 
             EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;
@@ -91,6 +95,7 @@ namespace SportsHall.Viev.Windows
         private void ListSubscribersButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new ListSubscribersPage());
+            Title = "ГЛАВНОЕ ОКНО: СПИСОК АБОНЕМЕНТОВ";
 
             EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;
@@ -103,6 +108,7 @@ namespace SportsHall.Viev.Windows
         private void ListWorcerButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new ListWorkerPage());
+            Title = "ГЛАВНОЕ ОКНО: СОТРУДНИКОВ";
 
             EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;
@@ -115,6 +121,7 @@ namespace SportsHall.Viev.Windows
         private void NewWorkwrButton_Click(object sender, RoutedEventArgs e)
         {
             MainFrame.Navigate(new NewWorkerPage());
+            Title = "ГЛАВНОЕ ОКНО: ДОБАВИТЬ СОТРУДНИКА";
 
             EntranceHallButton.Foreground = Brushes.Gray;
             SubscribersButton.Foreground = Brushes.Gray;

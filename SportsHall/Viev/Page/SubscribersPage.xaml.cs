@@ -76,7 +76,7 @@ namespace SportsHall.Viev.Page
                 BorderErrorText.Visibility = Visibility.Visible;
                 BorderErrorText.Text = "ПОЛЕ ИЛИ ПОЛЯ ПУСТЫЕ";
                 BorderInfo.Visibility = Visibility.Collapsed;
-                BorderInfoText.Visibility = Visibility.Collapsed;
+                BorderInfoText.Visibility = Visibility.Collapsed; //jjj
                 return;
             }
             else

@@ -28,6 +28,7 @@
                     Content="ВЫЙТИ" FontSize="14" 
                     Height="20" Width="80" 
                     Margin="5" 
+                    ToolTip="Выйти из учётной записи SportsHall"
                     VerticalAlignment="Center" HorizontalAlignment="Center" 
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                 <Button 
@@ -35,6 +36,7 @@
                     Content="—" FontSize="14" 
                     Height="20" Width="40" 
                     Margin="5" 
+                    ToolTip="Свернуть программу"
                     VerticalAlignment="Center" HorizontalAlignment="Center" 
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
                 <Button 
@@ -42,6 +44,7 @@
                     Content="✕" FontSize="14" 
                     Height="20" Width="40" 
                     Margin="5" 
+                    ToolTip="Закрыть программу и выйти из учётной записи SportsHall"
                     VerticalAlignment="Center" HorizontalAlignment="Center" 
                     VerticalContentAlignment="Center" HorizontalContentAlignment="Center"/>
             </StackPanel>
@@ -52,33 +55,39 @@
                         Click="EntranceHallButton_Click"
                         FontSize="14"
                         Margin="20 0 10 0"
-                        Content="ВХОД В ЗАЛ"/>
+                        Content="ВХОД В ЗАЛ"
+                        ToolTip="Кнопка для того, чтоб записать номер абонемента гостя"/>
                     
                     <Button 
                         x:Name="SubscribersButton" Click="SubscribersButton_Click"
                         FontSize="14"
                         Margin="20 0 10 0"
-                        Content="АБОНЕМЕНТ"/>
+                        Content="АБОНЕМЕНТ"
+                        ToolTip="Кнопка для того, чтоб выдать новому гостю абонемент"/>
                     <Button 
                         x:Name="HallButton" Click="HallButton_Click"
                         FontSize="14"
                         Margin="10 0 10 0"
-                        Content="ЗАЛ"/>
+                        Content="ЗАЛ"
+                        ToolTip="Кнопка для того, чтоб посмотреть сколько сейчас людей в зале"/>
                     <Button 
                         x:Name="ListSubscribersButton" Click="ListSubscribersButton_Click"
                         FontSize="14"
                         Margin="10 0 10 0"
-                        Content="СПИСОК АБОНЕМЕНОВ"/>
+                        Content="СПИСОК АБОНЕМЕНОВ"
+                        ToolTip="Кнопка для того, чтоб посмотреть сколько всего у нас занимается людей"/>
                     <Button 
                         x:Name="ListWorcerButton" Click="ListWorcerButton_Click"
                         FontSize="14"
                         Margin="10 0 10 0"
-                        Content="СПИСОК СОТРУДНИКОВ"/>
+                        Content="СПИСОК СОТРУДНИКОВ"
+                        ToolTip="Кнопка для того, чтоб посмотреть список всех сотрудников"/>
                     <Button 
                         x:Name="NewWorkwrButton" Click="NewWorkwrButton_Click"
                         FontSize="14"
                         Margin="10 0 10 0"
-                        Content="ДОБАВИТЬ СОТРУДНИКА"/>
+                        Content="ДОБАВИТЬ СОТРУДНИКА"
+                        ToolTip="Кнопка для того, чтоб добавить нового сотрудника"/>
                 </StackPanel>
                 <Line
                     X1="0"  X2="1200"

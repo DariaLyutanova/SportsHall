@@ -8,5 +8,6 @@ namespace SportsHall.Viev.Model
 {
     class AppConnect
     {
+        //hhh
     }
 }

@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace SportsHall.Viev.Page.Other
+namespace SportsHall.Viev.Page
 {
     /// <summary>
     /// Логика взаимодействия для EntranceHallPage.xaml
@@ -36,16 +36,24 @@ namespace SportsHall.Viev.Page.Other
             BorderError.BeginAnimation(HeightProperty, doubleAnimation);
             doubleAnimation.EasingFunction = new QuadraticEase();
 
-            if (IDSubscribersTextBox.Text != null)
-            {
-                BorderInfo.Visibility = Visibility.Visible;
-                BorderInfoText.Text = "ДОБРО ПОЖАЛОВАТЬ,\nХОРОШЕЙ ТРЕНИРОВКИ";
-            }
-
-            if (IDSubscribersTextBox.Text == null)
+            if (IDSubscribersTextBox.Text == "")
             {
                 BorderError.Visibility = Visibility.Visible;
-                BorderErrorText.Text = "ПОЛЕ НЕ МОЖЕ БЫТЬ ПУСТЫМ";
+                BorderErrorText.Visibility = Visibility.Visible;
+                BorderErrorText.Text = "ПОЛЕ ПУСТОЕ!";
+                BorderInfo.Visibility = Visibility.Collapsed;
+                BorderInfoText.Visibility = Visibility.Collapsed;
+                return;
+            }
+            else
+            {
+                BorderInfo.Visibility = Visibility.Visible;
+                BorderInfoText.Visibility= Visibility.Visible;
+                BorderInfoText.Text = "ДОБРО ПОЖАЛОВАТЬ!";
+                BorderError.Visibility = Visibility.Collapsed;
+                BorderErrorText.Visibility = Visibility.Collapsed;
+                IDSubscribersTextBox.Text = "";
+                return;
             }
         }
     }

@@ -1,67 +1,67 @@
-﻿<Page x:Class="SportsHall.Viev.Page.Other.EntranceHallPage"
+﻿<Page x:Class="SportsHall.Viev.Page.EntranceHallPage"
       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
       xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:SportsHall.Viev.Page.Other"
+      xmlns:local="clr-namespace:SportsHall.Viev.Page"
       mc:Ignorable="d" 
       Style="{StaticResource Page}">
 
     <Grid>
         <Border
             x:Name="BorderError"
-            Visibility="Hidden"
+            Visibility="Collapsed"
             Height="60" Width="500"
             Background="#FF7373"
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
             CornerRadius="0,0,20,20">
             <TextBlock 
-                  x:Name="BorderErrorText"
-                  Text="BorderInfoText"
-                  VerticalAlignment="Center"
-                  HorizontalAlignment="Center"
-                  FontSize="18"
-                  Style="{StaticResource TextBloockStyle}"
-                  Foreground="#BF3030"/>
+                Visibility="Collapsed"
+                x:Name="BorderErrorText"
+                Text="TEXT"
+                VerticalAlignment="Center"
+                HorizontalAlignment="Center"
+                FontSize="18"
+                Style="{StaticResource TextBloockStyle}"
+                Foreground="#BF3030"/>
         </Border>
         <Border
             x:Name="BorderInfo"
-            Visibility="Hidden"
+            Visibility="Collapsed"
             Height="60" Width="500"
             Background="#FF89FF73"
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
             CornerRadius="0,0,20,20">
             <TextBlock 
+                  Visibility="Collapsed"
                   x:Name="BorderInfoText"
-                  Text="BorderInfoText"
+                  Text="TEXT"
                   VerticalAlignment="Center"
                   HorizontalAlignment="Center"
                   FontSize="18"
                   Style="{StaticResource TextBloockStyle}"
                   Foreground="#FF41BF30"/>
         </Border>
-        
-        <StackPanel
-            VerticalAlignment="Center"
-            HorizontalAlignment="Center">
-            <StackPanel
-            Orientation="Horizontal">
+
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
                 <TextBlock
-                Foreground="White"
-                FontSize="20"
-                Text="НОМЕР АБОНЕМЕНТА"/>
+                    Foreground="White"
+                    FontSize="20"
+                    Text="НОМЕР АБОНЕМЕНТА"/>
                 <TextBox
-                x:Name="IDSubscribersTextBox"
-                Width="600"/>
+                    x:Name="IDSubscribersTextBox"
+                    Width="600"/>
             </StackPanel>
             <Button
                 x:Name="ProhodkaItsHall"
                 Click="ProhodkaItsHall_Click"
                 Style="{StaticResource OtherButton}"
-                Content="СОХРАНИТЬ"
+                Content="ПРОПУСТИТЬ В ЗАЛ"
                 Height="60"
+                FontSize="20"
                 Width="400"
                 Margin="0 50 0 0"/>
         </StackPanel>

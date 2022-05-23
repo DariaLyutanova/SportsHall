@@ -66,14 +66,14 @@
     <Compile Include="Viev\Page\Admin\NewWorkerPage.xaml.cs">
       <DependentUpon>NewWorkerPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Viev\Page\EntranceHallPage.xaml.cs">
+      <DependentUpon>EntranceHallPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Viev\Page\HallPage.xaml.cs">
       <DependentUpon>HallPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Viev\Page\ListSubscribersPage.xaml.cs">
       <DependentUpon>ListSubscribersPage.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Viev\Page\Other\EntranceHallPage.xaml.cs">
-      <DependentUpon>EntranceHallPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Viev\Page\SubscribersPage.xaml.cs">
       <DependentUpon>SubscribersPage.xaml</DependentUpon>
@@ -123,15 +123,15 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Viev\Page\EntranceHallPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Viev\Page\HallPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Viev\Page\ListSubscribersPage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Viev\Page\Other\EntranceHallPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

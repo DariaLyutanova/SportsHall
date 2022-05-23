@@ -88,22 +88,9 @@
                         Style="{StaticResource TextBloockStyle}"
                         Foreground="#BF3030"/>
             </Border>
-            <Image 
-                Height="200"
-                Width="200"
-                VerticalAlignment="Center"
-                HorizontalAlignment="Center"
-                RenderTransformOrigin="0.5,0.5"
-                Source="/Content/Icon/free-icon-dumbbell-308911.png">
-                <Image.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform/>
-                        <SkewTransform/>
-                        <RotateTransform Angle="90"/>
-                        <TranslateTransform/>
-                    </TransformGroup>
-                </Image.RenderTransform>
-            </Image>
+            <TextBlock Text="ФИЗ" Foreground="#fff" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="80" Margin="0 0 0 95"/>
+            <TextBlock Text="КУЛЬТ" Foreground="#fff" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50" Margin="0 0 0 0"/>
+            <TextBlock Text="ПРИВЕТ" Foreground="#fff" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="35" Margin="0 60 0 0"/>
             <Grid Grid.Column="1">
                 <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
                     <TextBlock

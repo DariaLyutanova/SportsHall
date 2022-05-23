@@ -7,7 +7,7 @@
         Style="{StaticResource Windows}" Title="АВТОРИЗАЦИЯ"
         Height="400" Width="800" MouseLeftButtonDown="Window_MouseLeftButtonDown"
         WindowStartupLocation="CenterScreen" >
-        <!--#region BackgroundWindows-->
+        <!--#region BackgroundWindowskkk-->
     <Window.Background>
         <LinearGradientBrush EndPoint="0.5,1" MappingMode="RelativeToBoundingBox" StartPoint="0.5,0">
             <GradientStop Color="#FF303030" Offset="1"/>

@@ -22,23 +22,44 @@
             <ColumnDefinition Width="1*"/>
         </Grid.ColumnDefinitions>
         <Border
-            Grid.Row="0" Grid.Column="0"
             Grid.ColumnSpan="3"
-            x:Name="BorderInfo"
-            Visibility="Hidden"
-            Height="60" Width="600"
+            x:Name="BorderError"
+            Visibility="Collapsed"
+            Height="60" Width="500"
             Background="#FF7373"
             VerticalAlignment="Top"
             HorizontalAlignment="Center"
             CornerRadius="0,0,20,20">
             <TextBlock 
-                x:Name="BorderTextInfo"
-                Text="Test"
+                Visibility="Collapsed"
+                x:Name="BorderErrorText"
+                Text="TEXT"
+                TextWrapping="Wrap"
                 VerticalAlignment="Center"
                 HorizontalAlignment="Center"
                 FontSize="18"
                 Style="{StaticResource TextBloockStyle}"
                 Foreground="#BF3030"/>
+        </Border>
+        <Border
+            Grid.ColumnSpan="3"
+            x:Name="BorderInfo"
+            Visibility="Collapsed"
+            Height="60" Width="500"
+            Background="#FF89FF73"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Center"
+            CornerRadius="0,0,20,20">
+            <TextBlock 
+                  TextWrapping="Wrap"
+                  Visibility="Collapsed"
+                  x:Name="BorderInfoText"
+                  Text="TEXT"
+                  VerticalAlignment="Center"
+                  HorizontalAlignment="Center"
+                  FontSize="18"
+                  Style="{StaticResource TextBloockStyle}"
+                  Foreground="#FF41BF30"/>
         </Border>
         <StackPanel Orientation="Horizontal" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Right">
             <TextBlock 

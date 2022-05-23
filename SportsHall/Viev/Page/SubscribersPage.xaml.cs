@@ -57,22 +57,43 @@ namespace SportsHall.Viev.Page
              * В последствии тут должен быть написан обработчик
              * который очищает поля, если данные были занесены в БД */
 
-            SurnameTextBox.Text = null;
-            NameTextBox.Text = null;
-            MiddleNameTextBox.Text = null;
-            LessonsTextBox.Text = null;
-            ValidFromYextBox.Text = null;
-            ValidUntilTextBox.Text = null;
-            PromoCodeTextBox.Text = null;
-            DiscountTextBox.Text = null;
             DoubleAnimation doubleAnimation = new DoubleAnimation();
             doubleAnimation.From = 60;
             doubleAnimation.To = 0;
             doubleAnimation.Duration = TimeSpan.FromSeconds(3);
             BorderInfo.BeginAnimation(HeightProperty, doubleAnimation);
+            BorderError.BeginAnimation(HeightProperty, doubleAnimation);
             doubleAnimation.EasingFunction = new QuadraticEase();
-            BorderInfo.Visibility = Visibility.Visible;
-            BorderTextInfo.Text = "ДАННЫЕ УСПЕШНО СОХРАНЕНЫ";
+
+            if (SurnameTextBox.Text == "" ||
+                NameTextBox.Text == "" ||
+                MiddleNameTextBox.Text == "" ||
+                LessonsTextBox.Text == "" ||
+                ValidFromYextBox.Text == "" ||
+                ValidUntilTextBox.Text == "")
+            {
+                BorderError.Visibility = Visibility.Visible;
+                BorderErrorText.Visibility = Visibility.Visible;
+                BorderErrorText.Text = "ПОЛЕ ИЛИ ПОЛЯ ПУСТЫЕ";
+                BorderInfo.Visibility = Visibility.Collapsed;
+                BorderInfoText.Visibility = Visibility.Collapsed;
+                return;
+            }
+            else
+            {
+                BorderInfo.Visibility = Visibility.Visible;
+                BorderInfoText.Visibility = Visibility.Visible;
+                BorderInfoText.Text = "НОВЫЙ ГОСТЬ ЗАРЕГИСТРИРОВАН. ДОБРО ПОЖАЛОВАТЬ";
+                BorderError.Visibility = Visibility.Collapsed;
+                BorderErrorText.Visibility = Visibility.Collapsed;
+                SurnameTextBox.Text = "";
+                NameTextBox.Text = "";
+                MiddleNameTextBox.Text = "";
+                LessonsTextBox.Text = "";
+                ValidFromYextBox.Text = "";
+                ValidUntilTextBox.Text = "";
+                return;
+            }
         }
     }
 }
